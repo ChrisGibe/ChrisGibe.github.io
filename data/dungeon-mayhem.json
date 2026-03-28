@@ -307,7 +307,7 @@
             "deck": [
                 {
                     "id": "enrage",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Enragée !",
                     "quantity": 2,
                     "image": "",
@@ -321,7 +321,7 @@
                 },
                 {
                     "id": "moi-vois-moi-tue",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Moi vois, moi tue !",
                     "quantity": 5,
                     "image": "",
@@ -335,7 +335,7 @@
                 },
                 {
                     "id": "bourre-pif",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Bourre-pif",
                     "quantity": 2,
                     "image": "",
@@ -349,7 +349,7 @@
                 },
                 {
                     "id": "coup-de-boule",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Coup de boule",
                     "quantity": 2,
                     "image": "",
@@ -368,7 +368,7 @@
                 },
                 {
                     "id": "mords-moi",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Mords-moi",
                     "quantity": 2,
                     "image": "",
@@ -382,7 +382,7 @@
                 },
                 {
                     "id": "bouclier-a-pointes",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Bouclier à pointes",
                     "quantity": 1,
                     "image": "",
@@ -396,7 +396,7 @@
                 },
                 {
                     "id": "sac-de-rats",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Sac de rats",
                     "quantity": 1,
                     "image": "",
@@ -415,7 +415,7 @@
                 },
                 {
                     "id": "casse-croûte",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Casse-croûte",
                     "quantity": 1,
                     "image": "",
@@ -434,7 +434,7 @@
                 },
                 {
                     "id": "ouvrez-armurerie",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Ouvrez l'armuerie",
                     "quantity": 2,
                     "image": "",
@@ -448,7 +448,7 @@
                 },
                 {
                     "id": "tout-en-souplesse",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Tout en souplesse",
                     "quantity": 2,
                     "image": "",
@@ -467,7 +467,7 @@
                 },
                 {
                     "id": "deux-haches-mieux-une",
-                    "character": "sutah",
+                    "character": "sutha",
                     "name": "Deux haches, c'est mieux qu'une",
                     "quantity": 2,
                     "image": "",
