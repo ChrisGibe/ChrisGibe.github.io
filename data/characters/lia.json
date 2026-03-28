@@ -1,0 +1,248 @@
+{
+    "id": "lia",
+    "name": "Lia",
+    "hp": 10,
+    "image": "",
+    "powers": [
+        {
+            "id": "lia-power-1",
+            "description": "Choisissez une carte dans votre défausse et remettez-la dans votre main",
+            "effects": [
+                {
+                    "type": "retrieve_from_discard",
+                    "target": "self",
+                    "select": "choose",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "lia-power-2",
+            "description": "Détruisez toutes les cartes Armure en jeu",
+            "effects": [
+                {
+                    "type": "destroy_by_tag",
+                    "target": "all_players",
+                    "tag": "armor"
+                }
+            ]
+        }
+    ],
+    "deck": [
+        {
+            "id": "châtiment-divin",
+            "character": "lia",
+            "name": "Chatîment Divin",
+            "quantity": 3,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 3
+                },
+                {
+                    "type": "heal",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "justice-ultime",
+            "character": "lia",
+            "name": "Justice Ultime",
+            "quantity": 3,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "id": "encore-plus-de-jutice",
+            "character": "lia",
+            "name": "Encore plus de justice !",
+            "quantity": 4,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "paroles-tranchantes",
+            "character": "lia",
+            "name": "Paroles Tranchantes",
+            "quantity": 3,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 2
+                },
+                {
+                    "type": "heal",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "pour-la-justice",
+            "character": "lia",
+            "name": "Pour la justice !",
+            "quantity": 3,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 1
+                },
+                {
+                    "type": "extra_play",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "bouclier-divin",
+            "character": "lia",
+            "name": "Bouclier divin",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "armor",
+                    "target": "self",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "id": "parade-tournoyante",
+            "character": "lia",
+            "name": "Parade tournoyante",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "armor",
+                    "target": "self",
+                    "value": 1
+                },
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "tout-doux",
+            "character": "lia",
+            "name": "Tout-doux",
+            "quantity": 1,
+            "image": "",
+            "effects": [
+                {
+                    "type": "armor",
+                    "target": "self",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "charisme-eleve",
+            "character": "lia",
+            "name": "Charisme élevé",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "soin-des-blessures",
+            "character": "lia",
+            "name": "Soin des blessures",
+            "quantity": 1,
+            "image": "",
+            "effects": [
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 2
+                },
+                {
+                    "type": "heal",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "inspiration-divine",
+            "character": "lia",
+            "name": "Inspiration divine",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "heal",
+                    "target": "self",
+                    "value": 2
+                },
+                {
+                    "type": "trigger_power",
+                    "power_id": "lia-power-1"
+                }
+            ]
+        },
+        {
+            "id": "frappe-de-bannissement",
+            "character": "lia",
+            "name": "Frappe de bannissement",
+            "quantity": 1,
+            "image": "",
+            "effects": [
+                {
+                    "type": "extra_play",
+                    "target": "self",
+                    "value": 1
+                },
+                {
+                    "type": "trigger_power",
+                    "power_id": "lia-power-2"
+                }
+            ]
+        },
+        {
+            "id": "index-de-justice",
+            "character": "lia",
+            "name": "L'index de justice",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "extra_play",
+                    "target": "self",
+                    "value": 2
+                }
+            ]
+        }
+    ]
+}
