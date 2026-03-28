@@ -1,0 +1,282 @@
+{
+    "id": "sutha",
+    "name": "Sutha",
+    "hp": 10,
+    "image": "",
+    "powers": [
+        {
+            "id": "sutha-power-1",
+            "description": "Vous vous soignez de 1 pour chaque adversaire, puis vous infligé 1 de dégât à chaque adversaire",
+            "effects": [
+                {
+                    "type": "foreach_opponent",
+                    "actions": [
+                        {
+                            "type": "heal",
+                            "target": "self",
+                            "value": 1
+                        },
+                        {
+                            "type": "damage",
+                            "target": "current_opponent",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sutha-power-2",
+            "description": "Tous les joueurs (même vous) défaussent leurs cartes, puis piochent 3 nouvelles cartes.",
+            "effects": [
+                {
+                    "type": "discard_hand",
+                    "target": "all_players"
+                },
+                {
+                    "type": "draw",
+                    "target": "all_players",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "id": "sutha-power-3",
+            "description": "Détruisez une carte Armure en jeu.",
+            "effects": [
+                {
+                    "type": "destroy_by_tag",
+                    "target": "choose_any_player",
+                    "tag": "armor",
+                    "select": "choose",
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "deck": [
+        {
+            "id": "enrage",
+            "character": "sutha",
+            "name": "Enragée !",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "id": "moi-vois-moi-tue",
+            "character": "sutha",
+            "name": "Moi vois, moi tue !",
+            "quantity": 5,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "id": "bourre-pif",
+            "character": "sutha",
+            "name": "Bourre-pif",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "coup-de-boule",
+            "character": "sutha",
+            "name": "Coup de boule",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "damage",
+                    "target": "choose_opponent",
+                    "value": 1
+                },
+                {
+                    "type": "extra_play",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "mords-moi",
+            "character": "sutha",
+            "name": "Mords-moi",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "armor",
+                    "target": "self",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "id": "bouclier-a-pointes",
+            "character": "sutha",
+            "name": "Bouclier à pointes",
+            "quantity": 1,
+            "image": "",
+            "effects": [
+                {
+                    "type": "armor",
+                    "target": "self",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "sac-de-rats",
+            "character": "sutha",
+            "name": "Sac de rats",
+            "quantity": 1,
+            "image": "",
+            "effects": [
+                {
+                    "type": "armor",
+                    "target": "self",
+                    "value": 2
+                },
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "casse-croûte",
+            "character": "sutha",
+            "name": "Casse-croûte",
+            "quantity": 1,
+            "image": "",
+            "effects": [
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 2
+                },
+                {
+                    "type": "heal",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "ouvrez-armurerie",
+            "character": "sutha",
+            "name": "Ouvrez l'armuerie",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "tout-en-souplesse",
+            "character": "sutha",
+            "name": "Tout en souplesse",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "heal",
+                    "target": "self",
+                    "value": 1
+                },
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "deux-haches-mieux-une",
+            "character": "sutha",
+            "name": "Deux haches, c'est mieux qu'une",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "extra_play",
+                    "target": "self",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "id": "cri-de-guerre",
+            "character": "sutha",
+            "name": "Crie de guerre",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "trigger_power",
+                    "power_id": "sutha-power-2"
+                },
+                {
+                    "type": "extra_play",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "attrape-moi-ca",
+            "character": "sutha",
+            "name": "Attrape-moi ça !",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "trigger_power",
+                    "power_id": "sutha-power-3"
+                },
+                {
+                    "type": "draw",
+                    "target": "self",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "id": "tourbillon-de-haches",
+            "character": "sutha",
+            "name": "Attrape-moi ça !",
+            "quantity": 2,
+            "image": "",
+            "effects": [
+                {
+                    "type": "trigger_power",
+                    "power_id": "sutha-power-1"
+                }
+            ]
+        }
+    ]
+}
